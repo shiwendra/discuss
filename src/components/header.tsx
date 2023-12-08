@@ -20,7 +20,7 @@ export default async function Header() {
       <Navbar className="shadow mb-8">
         <NavbarBrand>
           <Link href="/" className="font-bold">
-            Discuss
+            Discussion Board
           </Link>
         </NavbarBrand>
         <NavbarContent justify="center">
