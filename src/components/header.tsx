@@ -1,11 +1,11 @@
 import Link from "next/link";
+
 import * as actions from "@/actions";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Input,
   Button,
   Avatar,
   popover,
@@ -14,6 +14,7 @@ import {
   Popover,
 } from "@nextui-org/react";
 import HaederAuth from "@/components/header-auth";
+import SearchInput from "./search-input";
 export default async function Header() {
   return (
     <div>
@@ -25,7 +26,7 @@ export default async function Header() {
         </NavbarBrand>
         <NavbarContent justify="center">
           <NavbarItem>
-            <Input />
+            <SearchInput />
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
