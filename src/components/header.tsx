@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { Suspense } from "react";
 import * as actions from "@/actions";
 import {
   Navbar,
@@ -26,7 +26,9 @@ export default async function Header() {
         </NavbarBrand>
         <NavbarContent justify="center">
           <NavbarItem>
-            <SearchInput />
+            <Suspense>
+              <SearchInput />
+            </Suspense>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">

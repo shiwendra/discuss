@@ -14,8 +14,6 @@ interface PostShowPageProps {
 }
 export default async function PostShowPage({ params }: PostShowPageProps) {
   const { slug, postId } = params;
-  // await new Promise((resolve) => setTimeout(resolve, 2500));
-
   return (
     <div className="space-y-3">
       <Link className="underline decoration-solid" href={paths.topicShow(slug)}>
